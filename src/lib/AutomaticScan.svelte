@@ -8,7 +8,6 @@
   let percentage = result.score;
 
   onMount(() => {
-    const rootStyles = getComputedStyle(document.documentElement);
     let doughnutColor = percentage < 50 ? '#c30010' : percentage < 80 ? '#faa800' : '#228b22';
     let doughnutColorAlt = doughnutColor + "33";
 
