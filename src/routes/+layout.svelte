@@ -1,23 +1,17 @@
-<header>
-  <img src='/assets/images/header.png' alt='hier een dummy header <3'>
-</header>
+<script>
+  import { Header } from '$lib';
+    import Footer from '../lib/Footer.svelte';
+</script>
+
+<Header />
 
 <main class="wrapper">
   <slot />
 </main>
 
+<Footer />
+
 <style>
-    header {
-      position: fixed;
-      opacity: 0.5;
-  }
-
-  @media only screen and (max-width: 1600px) {
-    header img{
-      display: none;
-    }
-}
-
   .wrapper {
     margin: auto;
     max-width: 1100px;

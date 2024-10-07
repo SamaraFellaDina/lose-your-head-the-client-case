@@ -1,5 +1,4 @@
 <script>
-
   import {AccessibillityGraph, AutomaticScan, ErrorResult, TypeGraph, Icon} from '$lib'
   export let data = data;
   export let company = data.sites;
@@ -14,11 +13,3 @@
 <TypeGraph {result}/>
 
 <AccessibillityGraph {resultsheet}/>
-
-<footer>
-</footer>
-
-<style>
-
-
-</style>
