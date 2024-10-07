@@ -91,6 +91,7 @@
 
   h2 {
     margin-bottom: 50px;
+    font-size: 2em;
   }
 
   article {
