@@ -1,8 +1,6 @@
 <script>
 
   import Icon from "./Icon.svelte";
-
-  export let data;
   export let result = data.scans;
 </script>
 
