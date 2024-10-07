@@ -13,7 +13,7 @@
 }
 
 :root {
-  --font-family-regular: 'Outfit', arial, sans-serif;
+  --font-family: 'Outfit', arial, sans-serif;
 
   --color-blue: #0275FF;
   --color-lightblue: #D5E8FF;
@@ -31,7 +31,7 @@
 }
 
 * {
-  font-family: var(--font-family-regular);
+  font-family: var(--font-family);
   color: var(--color-regular-text);
 
   padding: 0;

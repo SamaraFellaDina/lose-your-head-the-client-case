@@ -15,7 +15,7 @@
     const rootStyles = getComputedStyle(document.documentElement);
     const colorBlue = rootStyles.getPropertyValue("--color-blue");
     const colorLightBlue = rootStyles.getPropertyValue("--color-lightblue");
-    const fontFamily = rootStyles.getPropertyValue("--font-family-regular");
+    const fontFamily = rootStyles.getPropertyValue("--font-family");
     const colorBlack = rootStyles.getPropertyValue("--color-black");
 
     const data = {
@@ -42,6 +42,12 @@
           grid: {
             display: false,
           },
+          ticks: {
+            font: {
+              family: fontFamily,
+              size: 16,
+            },
+          }
         },
         x: {
           title: {
@@ -51,6 +57,12 @@
           grid: {
             display: false,
           },
+          ticks: {
+            font: {
+              family: fontFamily,
+              size: 16,
+            },
+          }
         },
       },
       plugins: {
@@ -64,6 +76,7 @@
           font: {
             family: fontFamily,
             weight: "bold",
+            size: 18,
           },
           formatter: (value) => value,
         },
@@ -77,13 +90,13 @@
           padding: 10,
           displayColors: false,
           titleFont: {
-            size: 16,
+            size: 18,
             weight: "bold",
             family: fontFamily,
           },
           titleColor: colorBlue,
           bodyFont: {
-            size: 14,
+            size: 16,
             weight: "normal",
             family: fontFamily,
           },

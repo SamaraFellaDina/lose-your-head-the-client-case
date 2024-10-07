@@ -20,7 +20,7 @@
     const rootStyles = getComputedStyle(document.documentElement);
     const colorBlue = rootStyles.getPropertyValue('--color-blue');
     const colorLightBlue = rootStyles.getPropertyValue('--color-lightblue');
-    const fontFamily = rootStyles.getPropertyValue('--font-family-regular');
+    const fontFamily = rootStyles.getPropertyValue('--font-family');
     const colorBlack = rootStyles.getPropertyValue('--color-black');
  
     const months = ['jan', 'feb', 'mar', 'apr', 'mei', 'jun', 'jul', 'aug', 'sep', 'okt', 'nov', 'dec'];
@@ -50,6 +50,10 @@
           tickColor: colorBlack,
           ticks: {
             stepSize: 20,
+            font: {
+              family: fontFamily,
+              size: 16,
+            },
             callback: function(value) {
               return value + '%';
             }
@@ -58,6 +62,12 @@
         x: {
           grid: {
             display: false
+          },
+          ticks: {
+            font: {
+              family: fontFamily,
+              size: 16,
+            },
           }
         }
       },
@@ -98,7 +108,8 @@
           align: 'top',
           font: {
             family: fontFamily,
-            weight: 'bold'
+            weight: 'bold',
+            size: 18,
           },
           formatter: (value) => value + '%'
         },
