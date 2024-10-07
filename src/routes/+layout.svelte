@@ -8,8 +8,8 @@
 
 <style>
     header {
-      height: 10%;
       position: fixed;
+      opacity: 0.5;
   }
 
   @media only screen and (max-width: 1600px) {
@@ -33,14 +33,13 @@
   }
 
   @media only screen and (max-width: 1600px) {
-
     .wrapper{
       max-width: 900px;
-    }
+      }
 
     main {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
+    }
   }
-}
 </style>
