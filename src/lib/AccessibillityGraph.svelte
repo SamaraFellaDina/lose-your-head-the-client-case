@@ -9,8 +9,6 @@
   import ChartDataLabels from 'chartjs-plugin-datalabels';
 
   Chart.register(ChartDataLabels);
-
-  console.log(resultsheet)
  
   let August = resultsheet[0].score;
   let September = resultsheet[1].score;
