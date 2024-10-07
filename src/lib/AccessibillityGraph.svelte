@@ -9,7 +9,7 @@
 
   Chart.register(ChartDataLabels);
 
-  console.log(resultsheet[5].score)
+  console.log(resultsheet)
  
   let August = resultsheet[0].score;
   let September = resultsheet[1].score;

@@ -85,4 +85,19 @@
     font-size: var(--size);
   }
 
+  @media only screen and (max-width: 1600px) {
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+
+  li{
+    height: 100%;
+  }
+
+
+}
+
 </style>

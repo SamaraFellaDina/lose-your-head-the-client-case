@@ -27,9 +27,7 @@
     max-width: 1100px;
   }
 
-  header {
-    height: 10%;
-  }
+
 
   main {
     display: grid;
@@ -39,4 +37,18 @@
     height: 90%;
     margin: 20px auto;
   }
+
+  @media only screen and (max-width: 1600px) {
+
+    .wrapper{
+      max-width: 900px;
+    }
+
+    main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
 </style>
