@@ -65,6 +65,9 @@
     padding: var(--average-padding);
     grid-area: 2 / 1 / 3 / 2;
     display: flex;
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
   }
 
   canvas {
@@ -86,6 +89,10 @@
     width: 100%;
     max-width: fit-content;
     height: min-content;
+    align-self: center;
+    @media screen and (max-width: 700px) {
+      margin-top: 50px;
+    }
   }
 
   h2 {
@@ -95,5 +102,8 @@
 
   article {
     padding-right: 160px;
+    @media screen and (max-width: 700px) {
+      padding-right: 0;
+    }
   }
 </style>
