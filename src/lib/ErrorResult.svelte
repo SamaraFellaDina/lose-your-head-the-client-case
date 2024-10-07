@@ -68,6 +68,10 @@
     box-shadow: var(--box-shadow);
     list-style: none;
     padding: var(--average-padding);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   li h3 {
