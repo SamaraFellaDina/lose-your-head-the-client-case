@@ -64,7 +64,7 @@
     border-radius: var(--section-border-radius);
     box-shadow: var(--box-shadow);
     padding: var(--average-padding);
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 2 / 1 / 3 / 2;
     display: flex;
   }
 

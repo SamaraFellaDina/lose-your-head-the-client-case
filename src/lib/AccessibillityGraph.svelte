@@ -163,7 +163,7 @@
     border-radius: var(--section-border-radius);
     box-shadow: var(--box-shadow);
     padding: var(--average-padding);
-    grid-area: 3 / 1 / 4 / 3;
+    grid-area: 4 / 1 / 5 / 3;
   }
   
   canvas {

@@ -55,7 +55,7 @@
 <style>
   
   ul {
-    grid-area: 1 / 2 / 3 / 3;
+    grid-area: 2 / 2 / 4 / 3;
     display: flex;
     flex-direction: column;
     row-gap: 20px;

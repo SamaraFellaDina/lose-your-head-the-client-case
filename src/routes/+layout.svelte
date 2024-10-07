@@ -20,7 +20,7 @@
   main {
     display: grid;
     grid-template-columns: 2.2fr 0.8fr; 
-    grid-template-rows: 1fr 1fr 1.2fr;   
+    grid-template-rows: 0.2fr 1fr 1fr 1.2fr;   
     gap: 20px;  
     height: 90%;
     margin: 20px auto;
