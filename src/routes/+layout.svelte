@@ -2,7 +2,7 @@
   <img src='/assets/images/header.png' alt='hier een dummy header <3'>
 </header>
 
-<main>
+<main class="wrapper">
   <slot />
 </main>
 
@@ -16,5 +16,31 @@
     header img{
       display: none;
     }
+}
+
+  .wrapper {
+    margin: auto;
+    max-width: 1100px;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 2.2fr 0.8fr; 
+    grid-template-rows: 1fr 1fr 1.2fr;   
+    gap: 20px;  
+    height: 90%;
+    margin: 20px auto;
+  }
+
+  @media only screen and (max-width: 1600px) {
+
+    .wrapper{
+      max-width: 900px;
+    }
+
+    main {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
