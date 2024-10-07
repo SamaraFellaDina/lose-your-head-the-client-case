@@ -84,6 +84,7 @@
 
   li h3 {
     padding-bottom: 0.5em;
+    font-size: 20px;
   }
 
   li div {
