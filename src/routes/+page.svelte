@@ -6,7 +6,7 @@
   export let resultsheet = data.scans;
 </script>
 
-<Title { company }/>
+<Title {company} {resultsheet}/>
   
 <AutomaticScan {result} />
 
