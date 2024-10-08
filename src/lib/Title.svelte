@@ -4,11 +4,11 @@
   // export let resultsheet = data.scans;
 </script>
 
-<section class="title">
-  <article>
+<section>
+  <div>
+    <h2>{company[0].title}/home</h2>
     <p>Automatische Scan</p>
-    <h1>{company[0].title}/home</h1>
-  </article>
+  </div>
   <nav>
     <button><Icon name="arrow-left" /></button>
     <!-- <span><p>{resultsheet[0].date}</p></span> -->
@@ -31,7 +31,12 @@
     }
   }
 
-  h1 {
+  section div {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  h2 {
     font-size: 2em;
   }
 
