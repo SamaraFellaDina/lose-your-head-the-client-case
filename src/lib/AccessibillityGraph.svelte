@@ -156,7 +156,7 @@
   >
     <ul>
       {#each resultsheet as item}
-        <li>{item.title}: {item.amount}</li>
+        <li>{item.date}: {item.score}</li>
       {/each}
     </ul>
   </canvas>

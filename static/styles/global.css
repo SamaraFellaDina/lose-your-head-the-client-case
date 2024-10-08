@@ -26,6 +26,9 @@
 
   --average-gap: 20px;
   --average-padding: 30px;
+  @media screen and (max-width: 500px) {
+    --average-padding: 20px;
+  }
   --box-shadow: 0px 0px 9px -2px var(--color-shadow);
   --section-border-radius: 8px;
 }

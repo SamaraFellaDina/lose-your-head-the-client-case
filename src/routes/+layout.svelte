@@ -24,6 +24,7 @@
     gap: 20px;  
     height: 90%;
     margin: 20px auto;
+    padding: 0 10px;
   }
 
   @media only screen and (max-width: 1600px) {
