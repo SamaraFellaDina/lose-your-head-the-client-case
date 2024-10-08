@@ -46,10 +46,10 @@
 </script>
 
 <section>
-  <article>
+  <div>
     <h2>{result.title}</h2>
     <p>{result.description}</p>
-  </article>
+  </div>
   <figure>
     <canvas id="doughnut-chart" height="150" width="150"></canvas>
     <figcaption>{percentage}%</figcaption>
@@ -100,7 +100,7 @@
     font-size: 2em;
   }
 
-  article {
+  div {
     padding-right: 160px;
     @media screen and (max-width: 700px) {
       padding-right: 0;
