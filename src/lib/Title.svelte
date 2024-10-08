@@ -1,7 +1,7 @@
 <script>
   import Icon from "./Icon.svelte";
   export let company = data.sites;
-  export let resultsheet = data.scans;
+  // export let resultsheet = data.scans;
 </script>
 
 <section class="title">
@@ -24,6 +24,11 @@
     grid-area: 1 / 1 / 2 / 3;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
   }
 
   h1 {
