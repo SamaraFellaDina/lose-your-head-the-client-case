@@ -115,7 +115,7 @@
         },
       },
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       onHover: (event, elements) => {
         const canvas = event.native.target;
         if (elements.length) {
@@ -148,18 +148,15 @@
       </button>
     </nav>
   </div>
-  
-  <canvas id="line-chart" 
-    width="800" 
-    height="250" 
-    aria-label="Grafiek van scanresultaten van een jaar"
-  >
-    <ul>
-      {#each resultsheet as item}
-        <li>{item.date}: {item.score}</li>
-      {/each}
-    </ul>
-  </canvas>
+  <figure>
+    <canvas id="line-chart" aria-label="Grafiek van scanresultaten van een jaar">
+      <ul>
+        {#each resultsheet as item}
+          <li>{item.date}: {item.score}</li>
+        {/each}
+      </ul>
+    </canvas>
+  </figure>
 </section>
 
 <style>
@@ -174,10 +171,7 @@
   
   canvas {
     max-width: 100%;
-    height: auto;
-    @media screen and (max-width: 500px) {
-      height: 350px;
-    }
+    height: 300px;
   }
 
   div {

@@ -104,7 +104,7 @@
         },
       },
       responsive: true,
-      maintainAspectRatio: true,
+      maintainAspectRatio: false,
       onHover: (event, elements) => {
         const canvas = event.native.target;
         if (elements.length) {
@@ -126,36 +126,30 @@
 
 <section>
   <h2>Soorten foutmeldingen</h2>
-  <canvas
-    id="bar-chart"
-    width="800"
-    height="250"
-    aria-label="Soorten fouten grafiek"
-  >
-    <ul>
-      {#each results as item}
-        <li>{item.title}: {item.amount}</li>
-      {/each}
-    </ul>
-  </canvas>
+  <figure>
+    <canvas id="bar-chart" aria-label="Soorten fouten grafiek">
+      <ul>
+        {#each results as item}
+          <li>{item.title}: {item.amount}</li>
+        {/each}
+      </ul>
+    </canvas>
+  </figure>
 </section>
 
 <style>
   
   section {
-  background-color: var(--color-background-section);
-  border-radius: var(--section-border-radius);
-  box-shadow: var(--box-shadow);
-  padding: var(--average-padding);
-  grid-area: 3 / 1 / 4 / 2;
+    background-color: var(--color-background-section);
+    border-radius: var(--section-border-radius);
+    box-shadow: var(--box-shadow);
+    padding: var(--average-padding);
+    grid-area: 3 / 1 / 4 / 2;
   }
 
   canvas {
     max-width: 100%;
-    height: auto;
-    @media screen and (max-width: 500px) {
-      height: 350px;
-    }
+    height: 300px;
   }
 
   h2 {
