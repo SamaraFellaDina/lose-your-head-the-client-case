@@ -24,6 +24,8 @@ AccessDash is een nieuwe tool die bedrijven moet gaan helpen in het digitaal toe
 Dit is een project die we maken voor het bedrijf [Future Ready Design](https://www.futureready.design/). Het bedrijf is zelf bezig met het maken van een programma die Accesdash heet. Dit programma kan maandelijks een automatische scan uitvoeren van andere websites om vervolgens resultaten mee te geven die de toegankelijkheid laat zien van het bedrijf.<br>
 Het is De opdracht dat wij als team een Detail pagina maken waar de eigenaar van de website de scan resultaten kan zien om te kijken hoe toegankelijk hij is. Daarnaast worden er met grafieken de scoren aangegeven en een weergave van alle soorten fouten die in de website voorkomen.
 
+[Livelink](https://lose-your-head-the-client-case-omega.vercel.app/)
+
 ## Gebruikersaanwijzing
 
 Het programma word zo gemaakt dat je als bedrijfs eigenaar al jouw websites in 1 omgeving kan zien. Klik je op zo'n Scanresultaat van een website, dan kom je op de detail pagina (die wij hebben gemaakt) met daarin uitgebreide informatie over de scan van de huidige maand.
