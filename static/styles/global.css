@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Outfit';
   src: url('/fonts/outfit-v11-latin-regular.woff2') format('woff2');
-  font-weight: 400; /* Regular weight */
-  font-style: outfit;
+  font-weight: 400; 
+  font-style: normal; 
 }
 
 @font-face {
   font-family: 'Outfit';
   src: url('/fonts/outfit-v11-latin-700.woff2') format('woff2');
-  font-weight: 700; /* Bold weight */
-  font-style: outfit;
+  font-weight: 700; 
+  font-style: normal; 
 }
 
 :root {
@@ -26,11 +26,16 @@
 
   --average-gap: 20px;
   --average-padding: 30px;
-  @media screen and (max-width: 500px) {
-    --average-padding: 20px;
-  }
+
   --box-shadow: 0px 0px 9px -2px var(--color-shadow);
-  --section-border-radius: 8px;
+  --section-border-radius: 8px;  
+  
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --average-padding: 20px; 
+  }
 }
 
 * {
