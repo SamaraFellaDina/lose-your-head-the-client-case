@@ -19,39 +19,6 @@
   let isOldBrowser = false;
  
   onMount(() => {
-    const userAgent = navigator.userAgent;
-
-		const chromeMatch = userAgent.match(/Chrome\/(\d+)/);
-		if (chromeMatch && !userAgent.includes("Edg/")) {
-			const chromeVersion = parseInt(chromeMatch[1], 10);
-			if (chromeVersion < 79) {
-				isOldBrowser = true;
-			}
-		}
-
-		const edgeMatch = userAgent.match(/Edg\/(\d+)/);
-		if (edgeMatch) {
-			const edgeVersion = parseInt(edgeMatch[1], 10);
-			if (edgeVersion < 80) {
-				isOldBrowser = true;
-			}
-		}
-
-		const firefoxMatch = userAgent.match(/Firefox\/(\d+)/);
-		if (firefoxMatch) {
-			const firefoxVersion = parseInt(firefoxMatch[1], 10);
-			if (firefoxVersion < 71) {
-				isOldBrowser = true;
-			}
-		}
-
-		const safariMatch = userAgent.match(/Version\/(\d+)\.\d+ Safari\//);
-		if (safariMatch) {
-			const safariVersion = parseInt(safariMatch[1], 10);
-			if (safariVersion < 13) {
-				isOldBrowser = true;
-			}
-		}
 
     const rootStyles = getComputedStyle(document.documentElement);
     const colorBlue = rootStyles.getPropertyValue('--color-blue');
@@ -192,13 +159,6 @@
         {/each}
       </ul>
     </canvas>
-    {#if isOldBrowser}
-      <ul>
-        {#each resultsheet as item}
-          <li>{item.date}: {item.score}</li>
-        {/each}
-      </ul>  
-    {/if}
   </figure>
 </section>
 
