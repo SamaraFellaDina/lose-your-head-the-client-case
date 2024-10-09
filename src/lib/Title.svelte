@@ -6,7 +6,7 @@
 
 <section>
   <div>
-    <h2>{company[0].title}/home</h2>
+    <h1>{company[0].title}/home</h1>
     <p>Automatische Scan</p>
   </div>
   <nav>
@@ -36,7 +36,7 @@
     flex-direction: column-reverse;
   }
 
-  h2 {
+  h1 {
     font-size: 2em;
   }
 

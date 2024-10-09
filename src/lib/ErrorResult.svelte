@@ -6,7 +6,7 @@
 
 <ul>
   <li>
-    <h3>{result.result[0].title}</h3>
+    <h2>{result.result[0].title}</h2>
     <div>
       <p>{result.result[0].amount}</p>
       <Icon name = "ondekte-fouten" />
@@ -15,7 +15,7 @@
   </li>
 
   <li>
-    <h3>{result.result[1].title}</h3>
+    <h2>{result.result[1].title}</h2>
     <div>
       <p>{result.result[1].amount}</p>
       <Icon name = "contrast-fouten" />
@@ -24,7 +24,7 @@
   </li> 
 
   <li>
-    <h3>{result.result[2].title}</h3>
+    <h2>{result.result[2].title}</h2>
     <div>
       <p>{result.result[2].amount}</p>
       <Icon name = "structuele-fouten" />
@@ -32,7 +32,7 @@
   </li> 
     
   <li>
-    <h3>{result.result[3].title}</h3>
+    <h2>{result.result[3].title}</h2>
     <div>
       <p>{result.result[3].amount}</p>
       <Icon name = "ontbrekende-alt-teksten" />
@@ -41,7 +41,7 @@
   </li>  
 
   <li>
-    <h3>{result.result[4].title}</h3>
+    <h2>{result.result[4].title}</h2>
     <div>
       <p>{result.result[4].amount}</p>
       <Icon name = "aria-label" />
@@ -80,7 +80,7 @@
     }
   }
 
-  li h3 {
+  li h2 {
     padding-bottom: 0.5em;
     font-size: 20px;
   }
