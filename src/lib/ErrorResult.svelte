@@ -74,15 +74,21 @@
     box-shadow: var(--box-shadow);
     list-style: none;
     padding: var(--average-padding);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     @media only screen and (max-width: 1600px) {
       height: 100%;
       margin-bottom: var(--average-gap)
     }
+
   }
 
   li h2 {
     padding-bottom: 0.5em;
-    font-size: 20px;
+    font-size: 1em;
   }
 
   li div {
